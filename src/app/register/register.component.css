@@ -1,0 +1,9 @@
+fieldset{
+    width: 500px;
+    background-color: antiquewhite;
+}
+legend{
+    background-color: Red;
+    color:white;
+    text-align: center;
+}

@@ -1,0 +1,51 @@
+<fieldset>
+    <legend>Register Products</legend>
+    <table width="500" height="500">
+        <tr>
+           <td>
+               <dl>
+                    <dt>Product Id</dt>
+                    <dd><input type="number" [(ngModel)]="Id"></dd>
+                    <dt>Product Name</dt>
+                    <dd><input type="text" [(ngModel)]="Name"></dd>
+                    <dt>Price</dt>
+                    <dd><input type="number" [(ngModel)]="Price"></dd>
+                    <dt>Is In Stoke</dt>
+                    <dt><input type="checkbox" [(ngModel)]="IsInStock">Yes</dt>
+                    <dt>City</dt>
+                    <dd>
+                        <select [(ngModel)]="City">
+                            <option>Hyd</option>
+                            <option>Chennai</option>
+                            <option>Delhi</option>
+                        </select>
+                    </dd>
+               </dl>
+           </td>
+           <td>
+               <table frame="box" rules="all">
+                    <tr>
+                        <td>Product Id</td>
+                        <td>{{Id}}</td>
+                    </tr>
+                    <tr>
+                        <td>Product Name</td>
+                        <td>{{Name}}</td>
+                    </tr>
+                    <tr>
+                        <td>Price</td>
+                        <td>{{Price}}</td>
+                    </tr>
+                    <tr>
+                        <td>Is In Stock</td>
+                        <td>{{(IsInStock)?"Stock Available":"No Stock Available"}}</td>
+                    </tr>
+                    <tr>
+                        <td>Shipping To</td>
+                        <td>{{City}}</td>
+                    </tr>
+               </table>
+           </td>
+        </tr>   
+    </table>
+</fieldset>
