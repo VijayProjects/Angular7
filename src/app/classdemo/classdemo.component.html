@@ -1,0 +1,54 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<!-- Model-1 Using component value -->
+<div [class.effects]="isEffects">Welcome To Angular-1</div>
+<br>
+<!-- Reference as String -->
+<div [ngClass]="'effects'">Referenced As String</div>
+<br>
+<!-- Referenced as Array -->
+<div [ngClass]="['backEffects','textEffects']">Referenced As String</div>
+<br>
+<!-- Referenced as Object -->
+<div [ngClass]="{backEffects:true,borderEffects:true,textEffects:true}">Referenced As  Object</div>
+<br>
+<!-- class name sperating by '-' symbol -->
+<div [ngClass]="{'apply-effects':true}">Apply Effects by Separating '-' Symbol</div>
+<br><br>
+<div class="container">
+    <fieldset>
+        <legend>Validate UserName</legend>
+        <dt>User Name</dt>
+            <dd>
+            <input class="form-control" type="text" [ngClass]="{errorEffects:userName.invalid,validateEffects:userName.valid}" 
+                ngModel #userName="ngModel" pattern="[A-Z]{4,10}">
+            </dd>
+    </fieldset>
+    <br><br>
+    <div style="border: 1px solid">
+    <fieldset>
+        <legend>Apply Effects</legend>
+        <!-- Two-way Data Binding note: input text values by default string array-->
+        <input type="text" [(ngModel)]="applyEffects" placeholder="eg:backEffects,textEffects,borderEffects"
+            class="form-control">
+    </fieldset>
+    <br>
+    <h2 [ngClass]="applyEffects">Welcome to Angular</h2>
+    </div>
+    <br><br>
+    <div style="border: 1px solid">
+        <fieldset>
+            <legend>Close Effects</legend>
+            <ol>
+                <input type="checkbox" class="form-check-input" [(ngModel)]="isBack">BackEffects
+                <br>
+                <input type="checkbox" class="form-check-input" [(ngModel)]="isText">TextEffects
+                <br>
+                <input type="checkbox" class="form-check-input" [(ngModel)]="isBorder">BorderEffects
+            </ol>   
+        </fieldset>
+        <br>
+        <h2 [ngClass]="{backEffects:isBack,textEffects:isText,borderEffects:isBorder}">Apply Effects Using checkbox</h2>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<div class="container">
+    <fieldset>
+        <legend>Register Products</legend>
+        <table class="table">
+            <tr>
+            <td>
+                <dl>
+                    <dt>Product Id</dt>
+                    <dd><input type="number" ngModel #txtId="ngModel"></dd>
+                    <dt>Product Name</dt>
+                    <dd><input type="text" ngModel #txtName="ngModel"></dd>
+                    <dt>Price</dt>
+                    <dd><input type="number" ngModel #txtPrice="ngModel"></dd>
+                    <dt>Is In Stoke</dt>
+                    <dt><input type="checkbox" ngModel #cbxStock="ngModel">Yes</dt>
+                    <dt>City</dt>
+                    <dd>
+                        <select ngModel #lstCity="ngModel">
+                            <option>Hyd</option>
+                            <option>Chennai</option>
+                            <option>Delhi</option>
+                        </select>
+                    </dd>
+                </dl>
+            </td>
+            <td>
+                <table class="table table-info">
+                        <tr>
+                            <td>Product Id</td>
+                            <td>{{txtId.value}}</td>
+                        </tr>
+                        <tr>
+                            <td>Product Name</td>
+                            <td>{{txtName.value}}</td>
+                        </tr>
+                        <tr>
+                            <td>Price</td>
+                            <td>{{txtPrice.value}}</td>
+                        </tr>
+                        <tr>
+                            <td>Is In Stock</td>
+                            <td>{{(cbxStock.value)?"Stock Available":"No Stock Available"}}</td>
+                        </tr>
+                        <tr>
+                            <td>Shipping To</td>
+                            <td>{{lstCity.value}}</td>
+                        </tr>
+                </table>
+            </td>
+            </tr>   
+        </table>
+    </fieldset>
+</div>

@@ -1,0 +1,46 @@
+.backEffects{
+    background-color: yellow;
+}
+
+.textEffects{
+    color:red;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.borderEffects{
+    border: 2px dotted blue;
+}
+
+.effects{
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    color:white;
+    border: 2px solid red;
+    text-align:center;
+}
+.apply-effects{
+    background-color:green;
+    font-style: italic;
+    font-variant: small-caps;
+    font-size: 1.5rem;
+    color:white;
+    border: 2px solid violet;
+    text-align:center;
+}
+
+.errorEffects{
+    border: 2px solid red;
+}
+
+.validateEffects{
+    border: 2px solid green;
+}
+
+legend{
+    background-color: blue;
+    text-align: center;
+    color:white;
+}

@@ -7,6 +7,8 @@ import { LoginComponent } from './login.compenent';
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { FormsModule } from '@angular/forms';
+import { MvvmdemoComponent } from './mvvmdemo/mvvmdemo.component';
+import { ClassdemoComponent } from './classdemo/classdemo.component';
 
 
 
@@ -16,6 +18,8 @@ import { FormsModule } from '@angular/forms';
     LoginComponent,
     HomeComponent,
     RegisterComponent,
+    MvvmdemoComponent,
+    ClassdemoComponent,
   ],
   imports: [
     BrowserModule,
@@ -23,6 +27,6 @@ import { FormsModule } from '@angular/forms';
     FormsModule
   ],
   providers: [],
-  bootstrap: [RegisterComponent]
+  bootstrap: [ClassdemoComponent]
 })
 export class AppModule { }
