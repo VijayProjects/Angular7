@@ -1,0 +1,15 @@
+h2{
+    color: rgb(110, 112, 4);
+    font-style: italic;
+    text-decoration: underline;
+}
+thead{
+    color: white;
+}
+
+.even{
+    background-color: azure;
+}
+.odd{
+    background-color: antiquewhite;
+}

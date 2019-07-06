@@ -9,6 +9,7 @@ import { RegisterComponent } from './register/register.component';
 import { FormsModule } from '@angular/forms';
 import { MvvmdemoComponent } from './mvvmdemo/mvvmdemo.component';
 import { ClassdemoComponent } from './classdemo/classdemo.component';
+import { IteratordemoComponent } from './iteratordemo/iteratordemo.component';
 
 
 
@@ -20,6 +21,7 @@ import { ClassdemoComponent } from './classdemo/classdemo.component';
     RegisterComponent,
     MvvmdemoComponent,
     ClassdemoComponent,
+    IteratordemoComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,6 +29,6 @@ import { ClassdemoComponent } from './classdemo/classdemo.component';
     FormsModule
   ],
   providers: [],
-  bootstrap: [ClassdemoComponent]
+  bootstrap: [IteratordemoComponent]
 })
 export class AppModule { }

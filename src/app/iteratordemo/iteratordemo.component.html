@@ -1,0 +1,58 @@
+
+<div class="container">
+<!--
+    <div>
+        <h2>City Collecting from Cities Array</h2>
+        <ol>
+            <li *ngFor="let city of cities" >{{city}}</li>
+        </ol>
+    </div> 
+    <div>
+        <h2>Nested iteration</h2>
+        <ol>
+            <li *ngFor="let item of Items">
+                {{item.Category}}
+                <ol type ="a">
+                    <li *ngFor="let product of item.Products">{{product}}</li>
+                </ol>
+            </li>
+        </ol>
+    </div> 
+-->
+    <br>
+    <button class="btn btn-success" (click)="addProduct()">Add New Product</button>
+    <br>
+    <div>
+        <h2>Product Details</h2>
+        <table class="table table-hover">
+            <tr>
+                <thead class="bg-primary text-uppercase">
+                    <th>ProductId</th>
+                    <th>ProductName</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Index</th>
+                    <th>First</th>
+                    <th>Last</th>
+                    <th>Even</th>
+                    <th>Odd</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let product of Products; let i=index; let fst=first; 
+                                let lst=last; let even=even; let odd=odd let trackBy: trackByFn"
+                        [class.even]="even" [class.odd]="odd">
+                        <td>{{product.productId}}</td>
+                        <td>{{product.productName}}</td>
+                        <td>{{product.Price}}</td>
+                        <td>{{product.Category}}</td>
+                        <td>{{i}}</td>
+                        <td>{{fst}}</td>
+                        <td>{{lst}}</td>
+                        <td>{{even}}</td>
+                        <td>{{odd}}</td>
+                    </tr>
+                </tbody>
+            </tr>
+        </table>
+    </div>
+</div>
