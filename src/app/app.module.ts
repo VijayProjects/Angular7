@@ -10,6 +10,8 @@ import { FormsModule } from '@angular/forms';
 import { MvvmdemoComponent } from './mvvmdemo/mvvmdemo.component';
 import { ClassdemoComponent } from './classdemo/classdemo.component';
 import { IteratordemoComponent } from './iteratordemo/iteratordemo.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 
 
@@ -22,6 +24,8 @@ import { IteratordemoComponent } from './iteratordemo/iteratordemo.component';
     MvvmdemoComponent,
     ClassdemoComponent,
     IteratordemoComponent,
+    ParentComponent,
+    ChildComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,6 +33,6 @@ import { IteratordemoComponent } from './iteratordemo/iteratordemo.component';
     FormsModule
   ],
   providers: [],
-  bootstrap: [IteratordemoComponent]
+  bootstrap: [ParentComponent]
 })
 export class AppModule { }
