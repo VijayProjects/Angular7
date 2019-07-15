@@ -1,0 +1,42 @@
+<div class="container">
+    <fieldset>
+        <h2>Add New Product</h2>
+        <div class="form-group">
+            <label for="">Product Id</label>
+            <input [(ngModel)]="prodId" type="number" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">Product Name</label>
+            <input [(ngModel)]="prodName" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">Product Price</label>
+            <input [(ngModel)]="prodPrice" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary btn-block" (click)="addProduct()">Add Product</button>
+        </div>
+    </fieldset>
+    <br>
+    <div>
+        <h2>Products Details</h2>
+        <table class="table table-hover">
+            <thead class="thead-dark text-white text-uppercase">
+                <th>ProductId</th>
+                <th>ProductName</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of Products; let i=index;">
+                    <td>{{product.productId}}</td>
+                    <td>{{product.productName}}</td>
+                    <td>{{product.price}}</td>
+                    <td>
+                        <button class="btn btn-danger" (click)="deleteProduct(i)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

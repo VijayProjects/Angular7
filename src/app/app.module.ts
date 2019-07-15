@@ -12,6 +12,7 @@ import { ClassdemoComponent } from './classdemo/classdemo.component';
 import { IteratordemoComponent } from './iteratordemo/iteratordemo.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { ForindexComponent } from './forindex/forindex.component';
 
 
 
@@ -26,6 +27,7 @@ import { ChildComponent } from './child/child.component';
     IteratordemoComponent,
     ParentComponent,
     ChildComponent,
+    ForindexComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,6 +35,6 @@ import { ChildComponent } from './child/child.component';
     FormsModule
   ],
   providers: [],
-  bootstrap: [ParentComponent]
+  bootstrap: [ForindexComponent]
 })
 export class AppModule { }
