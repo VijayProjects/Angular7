@@ -13,6 +13,8 @@ import { IteratordemoComponent } from './iteratordemo/iteratordemo.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { ForindexComponent } from './forindex/forindex.component';
+import { FilterComponent } from './filter/filter.component';
+import { DataComponent } from './data/data.component';
 
 
 
@@ -28,6 +30,8 @@ import { ForindexComponent } from './forindex/forindex.component';
     ParentComponent,
     ChildComponent,
     ForindexComponent,
+    FilterComponent,
+    DataComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,6 +39,6 @@ import { ForindexComponent } from './forindex/forindex.component';
     FormsModule
   ],
   providers: [],
-  bootstrap: [ForindexComponent]
+  bootstrap: [DataComponent]
 })
 export class AppModule { }
