@@ -1,0 +1,24 @@
+<div class="container">
+    <form #frmRegister="ngForm">
+        <h3>Form State Validation Service</h3>
+        <dt>UserName</dt>
+        <dd><input ngModel #username="ngModel" type="text" name="userName" class="form-control-sm" ></dd>
+        <dt>UserEmail</dt>
+        <dd><input required ngModel #username="ngModel" type="text" name="userEmail" class="form-control-sm" ></dd>
+        <br>
+        <button [disabled]="frmRegister.invalid"  class="btn btn-primary">Register</button>
+        &nbsp;&nbsp;
+        <button [disabled]="frmRegister.pristine"  class="btn btn-success">Save</button>
+    </form>
+    <br>
+    <dt>No fields in the form are modified(ngPristine=pristine)</dt>
+    <dd>{{frmRegister.pristine}}</dd>
+    <dt>One or more fields are modified(ngDirty=dirty)</dt>
+    <dd>{{frmRegister.dirty}}</dd>
+    <dt>All fields are valid(ngValid=valid)</dt>
+    <dd>{{frmRegister.valid}}</dd>
+    <dt>One or more fields are invalid(ngInvalid=invalid)</dt>
+    <dd>{{frmRegister.invalid}}</dd>
+    <dt>Form is summitted(ngSubmitted=submitted)</dt>
+    <dd>{{frmRegister.submitted}}</dd>
+</div>

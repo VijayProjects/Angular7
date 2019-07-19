@@ -16,6 +16,11 @@ import { ForindexComponent } from './forindex/forindex.component';
 import { FilterComponent } from './filter/filter.component';
 import { DataComponent } from './data/data.component';
 import { TemplateformComponent } from './templateform/templateform.component';
+import { FormstatevalidationComponent } from './formstatevalidation/formstatevalidation.component';
+import { ProductslistComponent } from './productslist/productslist.component';
+import { ProductsdataService } from './productsdata.service';
+import { CaptchaService } from './captchaservice.service';
+import { CaptcharegisterComponent } from './captcharegister/captcharegister.component';
 
 
 
@@ -34,13 +39,16 @@ import { TemplateformComponent } from './templateform/templateform.component';
     FilterComponent,
     DataComponent,
     TemplateformComponent,
-  ],
+    FormstatevalidationComponent,
+    ProductslistComponent,
+    CaptcharegisterComponent
+  ], 
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
-  bootstrap: [TemplateformComponent]
+  providers: [ProductsdataService, CaptchaService],
+  bootstrap: [CaptcharegisterComponent]
 })
 export class AppModule { }
