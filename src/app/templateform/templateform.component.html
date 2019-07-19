@@ -1,0 +1,19 @@
+<div class="container">
+    <h3>Template Driven Form</h3>
+    <form #frmRegister="ngForm">
+        <dl>
+            <dt>User Name</dt>
+            <dd><input ngModel #username="ngModel" type="text" class=form-control-sm name="userName"></dd>
+            
+            <dt>Email</dt>
+            <dd><input ngModel #useremail="ngModel" type="text" class=form-control-sm name="email"></dd>
+        </dl>
+        <br>
+        <dl>
+            <dt>User Name</dt>
+            <dd>{{username.value}}</dd>
+            <dt>User Email</dt>
+            <dd>{{useremail.value}}</dd>
+        </dl>
+    </form>
+</div>

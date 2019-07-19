@@ -15,6 +15,7 @@ import { ChildComponent } from './child/child.component';
 import { ForindexComponent } from './forindex/forindex.component';
 import { FilterComponent } from './filter/filter.component';
 import { DataComponent } from './data/data.component';
+import { TemplateformComponent } from './templateform/templateform.component';
 
 
 
@@ -32,6 +33,7 @@ import { DataComponent } from './data/data.component';
     ForindexComponent,
     FilterComponent,
     DataComponent,
+    TemplateformComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,6 +41,6 @@ import { DataComponent } from './data/data.component';
     FormsModule
   ],
   providers: [],
-  bootstrap: [DataComponent]
+  bootstrap: [TemplateformComponent]
 })
 export class AppModule { }
