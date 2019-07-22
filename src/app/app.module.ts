@@ -21,6 +21,10 @@ import { ProductslistComponent } from './productslist/productslist.component';
 import { ProductsdataService } from './productsdata.service';
 import { CaptchaService } from './captchaservice.service';
 import { CaptcharegisterComponent } from './captcharegister/captcharegister.component';
+import { SitehomeComponent } from './sitehome/sitehome.component';
+import { AboutsiteComponent } from './aboutsite/aboutsite.component';
+import { ContactsiteComponent } from './contactsite/contactsite.component';
+import { NofoundComponent } from './nofound/nofound.component';
 
 
 
@@ -41,7 +45,11 @@ import { CaptcharegisterComponent } from './captcharegister/captcharegister.comp
     TemplateformComponent,
     FormstatevalidationComponent,
     ProductslistComponent,
-    CaptcharegisterComponent
+    CaptcharegisterComponent,
+    SitehomeComponent,
+    AboutsiteComponent,
+    ContactsiteComponent,
+    NofoundComponent
   ], 
   imports: [
     BrowserModule,
@@ -49,6 +57,6 @@ import { CaptcharegisterComponent } from './captcharegister/captcharegister.comp
     FormsModule
   ],
   providers: [ProductsdataService, CaptchaService],
-  bootstrap: [CaptcharegisterComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
