@@ -1,0 +1,25 @@
+<div class="container">
+    <table>
+        <tr>
+            <td valign="top"> 
+                <h2 class="text-danger">Product Details</h2>
+                <ng-container *ngFor="let product of products">
+                    <div *ngIf="prodId == product.productId">
+                        <dl>
+                            <dt>Product Id</dt>
+                            <dd>{{product.productId}}</dd>
+                            <dt>Product Name</dt>
+                            <dd>{{product.productName}}</dd>
+                            <dt>Product Price</dt>
+                            <dd>{{product.price}}</dd>
+                        </dl>
+                        <button (click)="clickPreview()" class="btn btn-success">Preview</button>
+                    </div>
+                </ng-container>   
+            </td>
+            <td width="400" align="right" valign="top">
+                <router-outlet></router-outlet>   
+            </td>
+        </tr>
+    </table>
+</div>

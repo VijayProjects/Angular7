@@ -5,12 +5,16 @@
             <th>ProductID</th>
             <th>ProductName</th>
             <th>Price</th>
+            <th>View Details</th>
         </thead>
         <tbody>
             <tr *ngFor = "let product of products">
                 <td>{{product.productId}}</td>
                 <td>{{product.productName}}</td>
                 <td>{{product.price}}</td>
+                <td>
+                    <button (click)="clickDetails(product)" class="btn btn-primary">Details</button>
+                </td>
             </tr>
         </tbody>
     </table>

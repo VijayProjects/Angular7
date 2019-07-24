@@ -1,24 +1,27 @@
 <br>
 <div class="container">
-  <h1 class="header-nav bg-secondary text-white text-center" style="height: 100px;">
-    Welcome to NareshIT Software Training Institute
+  <h1 class="header-nav bg-dark text-white text-center font-italic">
+    <marquee>Welcome to NareshIT Software Training Institute</marquee>
   </h1>
-  <table widht="800">
-    <tr>
-      <td width="200" class="leftPanner">
+  <table width="1100">
+    <tr valign="top">
+      <td width="200" class="leftPanner font-weight-bolder">
         <ul>
           <li>
-            <a [routerLink]="['home']">Home</a> 
+            <a routerLink="home">Home</a> 
           </li>
           <li>
-            <a [routerLink]="['about']">About</a> 
+            <a routerLink="about">About</a> 
           </li>
           <li>
-            <a [routerLink]="['contact']">Contact</a>
+            <a routerLink="contact">Contact</a>
+          </li>
+          <li>
+            <a routerLink="products">Products</a>
           </li>
         </ul>
       </td>
-      <td widht="600" height="400" valign="top">
+      <td width="600" height="500" valign="top">
         <router-outlet></router-outlet>  
       </td>
     </tr>

@@ -25,6 +25,8 @@ import { SitehomeComponent } from './sitehome/sitehome.component';
 import { AboutsiteComponent } from './aboutsite/aboutsite.component';
 import { ContactsiteComponent } from './contactsite/contactsite.component';
 import { NofoundComponent } from './nofound/nofound.component';
+import { ProductsdetailsComponent } from './productsdetails/productsdetails.component';
+import { PreviewComponent } from './preview/preview.component';
 
 
 
@@ -49,7 +51,9 @@ import { NofoundComponent } from './nofound/nofound.component';
     SitehomeComponent,
     AboutsiteComponent,
     ContactsiteComponent,
-    NofoundComponent
+    NofoundComponent,
+    ProductsdetailsComponent,
+    PreviewComponent
   ], 
   imports: [
     BrowserModule,
