@@ -1,0 +1,18 @@
+<div class="container">
+    <ng-container *ngFor = "let course of courses">
+        <div *ngIf ="courseId == course.courseId">
+            <div class="card">
+                <div class="card-header bg-secondary">
+                    <h2 class="text-white">{{course.courseName}}</h2>
+                </div>
+                <div class="card-body">
+                    <h3>{{course.faculty}}</h3>
+                    <img width="300" height="300" src={{course.photo}}>
+                </div>
+                <div class="card-footer bg-secondary">
+                    <h2 class="text-white">{{course.fee | currency: 'INR'}}</h2>
+                </div>
+            </div>
+        </div>
+    </ng-container>   
+</div>

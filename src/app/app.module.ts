@@ -27,6 +27,12 @@ import { ContactsiteComponent } from './contactsite/contactsite.component';
 import { NofoundComponent } from './nofound/nofound.component';
 import { ProductsdetailsComponent } from './productsdetails/productsdetails.component';
 import { PreviewComponent } from './preview/preview.component';
+import { CourseslistComponent } from './courseslist/courseslist.component';
+import { CoursesdataService } from './coursesdata.service';
+import { CourseComponent } from './course/course.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CoursedetailsComponent } from './coursedetails/coursedetails.component';
+import { CoursepreviewComponent } from './coursepreview/coursepreview.component';
 
 
 
@@ -53,14 +59,19 @@ import { PreviewComponent } from './preview/preview.component';
     ContactsiteComponent,
     NofoundComponent,
     ProductsdetailsComponent,
-    PreviewComponent
+    PreviewComponent,
+    CourseslistComponent,
+    CourseComponent,
+    PageNotFoundComponent,
+    CoursedetailsComponent,
+    CoursepreviewComponent
   ], 
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [ProductsdataService, CaptchaService],
-  bootstrap: [AppComponent]
+  providers: [ProductsdataService, CaptchaService, CoursesdataService],
+  bootstrap: [CourseComponent]
 })
 export class AppModule { }

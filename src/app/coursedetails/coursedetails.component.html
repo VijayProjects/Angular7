@@ -1,0 +1,26 @@
+<div class="container">
+    <table width="100%">
+        <tr>
+            <td width="200" valign="top">
+                <ng-container *ngFor = "let course of courses"> 
+                    <div *ngIf = "courseId == course.courseId"> 
+                        <dl>
+                            <dt>Course Id</dt>
+                            <dd>{{course.courseId}}</dd>
+                            <dt>Course Name</dt>
+                            <dd>{{course.courseName}}</dd>
+                            <dt>Course Fee</dt>
+                            <dd>{{course.fee}}</dd>
+                            <dt>Faculty</dt>
+                            <dd>{{course.faculty}}</dd>
+                        </dl>
+                    </div> 
+                </ng-container> 
+                <button (click)= "viewPreview()" class="btn btn-success">Preview</button> 
+            </td>
+            <td width="400">
+               <router-outlet></router-outlet>    
+            </td>
+        </tr>  
+    </table>     
+</div>

@@ -7,6 +7,10 @@ import { NofoundComponent } from './nofound/nofound.component';
 import { ProductslistComponent } from './productslist/productslist.component';
 import { ProductsdetailsComponent } from './productsdetails/productsdetails.component';
 import { PreviewComponent } from './preview/preview.component';
+import { CourseslistComponent } from './courseslist/courseslist.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CoursedetailsComponent } from './coursedetails/coursedetails.component';
+import { CoursepreviewComponent } from './coursepreview/coursepreview.component';
 
 const routes: Routes = [
   {path: 'home', component: SitehomeComponent},
@@ -18,8 +22,14 @@ const routes: Routes = [
       {path: 'preview/:id', component: PreviewComponent}
     ]
   },
+  {path: 'courses', component: CourseslistComponent},
+  {path: 'courses/:id', component: CoursedetailsComponent,
+    children: [
+      {path: 'coursePreview/:id', component: CoursepreviewComponent}
+    ]
+  },
   {path: '', redirectTo: 'home', pathMatch: 'full'},
-  {path: '**', component: NofoundComponent}
+  {path: '**', component: PageNotFoundComponent}
 ];
 
 @NgModule({
