@@ -33,6 +33,9 @@ import { CourseComponent } from './course/course.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { CoursedetailsComponent } from './coursedetails/coursedetails.component';
 import { CoursepreviewComponent } from './coursepreview/coursepreview.component';
+import { VegitablesdetailsComponent } from './vegitablesdetails/vegitablesdetails.component';
+import { VegitabledataService } from './vegitabledata.service';
+import { MidlandComponent } from './midland/midland.component';
 
 
 
@@ -64,14 +67,16 @@ import { CoursepreviewComponent } from './coursepreview/coursepreview.component'
     CourseComponent,
     PageNotFoundComponent,
     CoursedetailsComponent,
-    CoursepreviewComponent
-  ], 
+    CoursepreviewComponent,
+    VegitablesdetailsComponent,
+    MidlandComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [ProductsdataService, CaptchaService, CoursesdataService],
-  bootstrap: [CourseComponent]
+  providers: [ProductsdataService, CaptchaService, CoursesdataService, VegitabledataService],
+  bootstrap: [MidlandComponent]
 })
 export class AppModule { }

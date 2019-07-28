@@ -11,6 +11,7 @@ import { CourseslistComponent } from './courseslist/courseslist.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { CoursedetailsComponent } from './coursedetails/coursedetails.component';
 import { CoursepreviewComponent } from './coursepreview/coursepreview.component';
+import { VegitablesdetailsComponent } from './vegitablesdetails/vegitablesdetails.component';
 
 const routes: Routes = [
   {path: 'home', component: SitehomeComponent},
@@ -28,6 +29,7 @@ const routes: Routes = [
       {path: 'coursePreview/:id', component: CoursepreviewComponent}
     ]
   },
+  {path: 'vegitables', component: VegitablesdetailsComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponent}
 ];
