@@ -1,0 +1,15 @@
+<div class="container">
+  <h2>Model Driven Form</h2>
+  <form [formGroup]="frmRegister" (submit)="submitClick(frmRegister.value)">
+    <div class="form-group">
+      <label>User Name</label>
+      <input formControlName="userName" type="text" name="uname" class="form-control">
+    </div>
+    <div class="form-group">
+      <label>User Email</label>
+      <input formControlName="userEmail" type="text" name="email" class="form-control">
+    </div>
+    <br>
+    <button class="btn btn-success">Submit</button>
+  </form>
+</div>

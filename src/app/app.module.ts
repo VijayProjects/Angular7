@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login.compenent';
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MvvmdemoComponent } from './mvvmdemo/mvvmdemo.component';
 import { ClassdemoComponent } from './classdemo/classdemo.component';
 import { IteratordemoComponent } from './iteratordemo/iteratordemo.component';
@@ -40,6 +40,7 @@ import { MeanComponent } from './mean/mean.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GetdataService } from './getdata.service';
 import { PostdataService } from './postdata.service';
+import { ModelformComponent } from './modelform/modelform.component';
 
 
 
@@ -74,16 +75,18 @@ import { PostdataService } from './postdata.service';
     CoursepreviewComponent,
     VegitablesdetailsComponent,
     MidlandComponent,
-    MeanComponent
+    MeanComponent,
+    ModelformComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule
   ],
   providers: [ProductsdataService, CaptchaService, CoursesdataService, VegitabledataService,
               GetdataService, PostdataService],
-  bootstrap: [MeanComponent]
+  bootstrap: [ModelformComponent]
 })
 export class AppModule { }
