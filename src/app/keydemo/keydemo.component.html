@@ -1,0 +1,13 @@
+<h2>Key Events</h2>
+<div class="form-group">
+  <label>User Name</label>
+  <input (keyup)="verifyUser()" type="text" size="40" [(ngModel)]="uname">
+  <span [ngStyle]="userStyleObj">{{userErrMsg}}</span>
+</div>
+<div class="form-group">
+  <label>User Password</label>
+  <input (keypress)="checksCapOn($event)" (keyup)="verifyPassword()" type="text" [(ngModel)]="userPwd" placeholder="eg: 4 to 10 and one upper letter" size="40">
+  <meter min="{{min}}" value="{{value}}" max="{{max}}" low="{{low}}" high="{{high}}"></meter>
+  <span [ngStyle]="pwdStyleObj">{{pwdErrMsg}}</span>
+</div>
+<div>{{capsOnMsg}}</div>

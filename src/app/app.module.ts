@@ -41,6 +41,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { GetdataService } from './getdata.service';
 import { PostdataService } from './postdata.service';
 import { ModelformComponent } from './modelform/modelform.component';
+import { KeydemoComponent } from './keydemo/keydemo.component';
 
 
 
@@ -76,7 +77,8 @@ import { ModelformComponent } from './modelform/modelform.component';
     VegitablesdetailsComponent,
     MidlandComponent,
     MeanComponent,
-    ModelformComponent
+    ModelformComponent,
+    KeydemoComponent
   ],
   imports: [
     BrowserModule,
@@ -87,6 +89,6 @@ import { ModelformComponent } from './modelform/modelform.component';
   ],
   providers: [ProductsdataService, CaptchaService, CoursesdataService, VegitabledataService,
               GetdataService, PostdataService],
-  bootstrap: [ModelformComponent]
+  bootstrap: [KeydemoComponent]
 })
 export class AppModule { }
