@@ -26,14 +26,11 @@ app.get('/list_user', function (req, res) {
 })
 
 // This responds a GET request for abcd, abxcd, ab123cd, and so on
-app.get('/ab*cd', function(req, res) {   
+app.get('/c*t', function(req, res) {   
    console.log("Got a GET request for /ab*cd");
    res.send('Page Pattern Match');
 })
 
-var server = app.listen(8081, function () {
-   var host = server.address().address
-   var port = server.address().port
+var server = app.listen(8080);
    
-   console.log("Example app listening at http://%s:%s", host, port)
-})
+   console.log("Example app listening at http://127.0.0.1:8080");

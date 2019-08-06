@@ -1,0 +1,37 @@
+<div class="container">
+  <form #frmRegister="ngForm" method="POST" (submit)="submitProduct(frmRegister.value)">
+    <fieldset>
+      <legend>Add Products</legend>
+      <dt>Product Id</dt>
+      <dd>
+        <input type="text" ngModel #Id="ngModel" name="Id" class="form-control">
+      </dd>
+      <dt>Product Name</dt>
+      <dd>
+        <input type="text" ngModel #Name="ngModel" name="Name" class="form-control">
+      </dd>
+      <dt>Price</dt>
+      <dd>
+        <input type="text" ngModel #Price="ngModel" name="Price" class="form-control">
+      </dd>
+      <br>
+      <button class="btn btn-success">Add Product</button>
+    </fieldset>
+  </form>
+  <br>
+  <h2>Product Details</h2>
+  <table class="table table-hover">
+    <thead class="bg-secondary text-white text-uppercase">
+      <th>ProductId</th>
+      <th>Product Name</th>
+      <th>Price</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <td>{{product.id}}</td>
+        <td>{{product.name}}</td>
+        <td>{{product.price}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

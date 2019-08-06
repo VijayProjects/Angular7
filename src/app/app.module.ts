@@ -36,6 +36,10 @@ import { CoursepreviewComponent } from './coursepreview/coursepreview.component'
 import { VegitablesdetailsComponent } from './vegitablesdetails/vegitablesdetails.component';
 import { VegitabledataService } from './vegitabledata.service';
 import { MidlandComponent } from './midland/midland.component';
+import { MeanComponent } from './mean/mean.component';
+import { HttpClientModule } from '@angular/common/http';
+import { GetdataService } from './getdata.service';
+import { PostdataService } from './postdata.service';
 
 
 
@@ -69,14 +73,17 @@ import { MidlandComponent } from './midland/midland.component';
     CoursedetailsComponent,
     CoursepreviewComponent,
     VegitablesdetailsComponent,
-    MidlandComponent
+    MidlandComponent,
+    MeanComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [ProductsdataService, CaptchaService, CoursesdataService, VegitabledataService],
-  bootstrap: [MidlandComponent]
+  providers: [ProductsdataService, CaptchaService, CoursesdataService, VegitabledataService,
+              GetdataService, PostdataService],
+  bootstrap: [MeanComponent]
 })
 export class AppModule { }
