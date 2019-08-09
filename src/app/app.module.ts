@@ -42,7 +42,17 @@ import { GetdataService } from './getdata.service';
 import { PostdataService } from './postdata.service';
 import { ModelformComponent } from './modelform/modelform.component';
 import { KeydemoComponent } from './keydemo/keydemo.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatAutocompleteModule, MatInputModule, MatIconModule} from '@angular/material';
+import { AutocompleteComponent } from './autocomplete/autocomplete.component';
+import { MatbuttonComponent } from './matbutton/matbutton.component';
+import { MeterialModule } from './meterial/meterial.module';
+import { MatbuttontoggleComponent } from './matbuttontoggle/matbuttontoggle.component';
+import { MatdatepickerComponent } from './matdatepicker/matdatepicker.component';
+import { MatnavbarComponent } from './matnavbar/matnavbar.component';
+import { MatsidenavComponent } from './matsidenav/matsidenav.component';
+import { MatformfieldComponent } from './matformfield/matformfield.component';
+import { MatcardComponent } from './matcard/matcard.component';
 
 
 @NgModule({
@@ -78,17 +88,35 @@ import { KeydemoComponent } from './keydemo/keydemo.component';
     MidlandComponent,
     MeanComponent,
     ModelformComponent,
-    KeydemoComponent
+    KeydemoComponent,
+    AutocompleteComponent,
+    MatbuttonComponent,
+    MatbuttontoggleComponent,
+    MatdatepickerComponent,
+    MatnavbarComponent,
+    MatsidenavComponent,
+    MatformfieldComponent,
+    MatcardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatAutocompleteModule,
+    MatInputModule,
+    MeterialModule
   ],
-  providers: [ProductsdataService, CaptchaService, CoursesdataService, VegitabledataService,
-              GetdataService, PostdataService],
-  bootstrap: [KeydemoComponent]
+  providers: [
+    ProductsdataService,
+    CaptchaService,
+    CoursesdataService,
+    VegitabledataService,
+    GetdataService,
+    PostdataService
+  ],
+  bootstrap: [MatcardComponent]
 })
 export class AppModule { }

@@ -1,0 +1,21 @@
+<div class="container">
+  <div>
+    Default Appearance:
+    <mat-button-toggle-group  aria-label="Font Style" #toggleGroup="matButtonToggleGroup">
+      <mat-button-toggle value="angular">Angular</mat-button-toggle>
+      <mat-button-toggle value="react">React</mat-button-toggle>
+      <mat-button-toggle value="vue">Vue</mat-button-toggle>
+    </mat-button-toggle-group>
+    {{toggleGroup.value}}
+  </div>
+  <br>
+  <div>
+    Lagacy Appearance:
+    <mat-button-toggle-group appearance="legacy" aria-label="Font Style" #toggleGroup1="matButtonToggleGroup">
+      <mat-button-toggle value="angular">Angular</mat-button-toggle>
+      <mat-button-toggle value="react">React</mat-button-toggle>
+      <mat-button-toggle value="vue">Vue</mat-button-toggle>
+    </mat-button-toggle-group>
+    {{toggleGroup1.value}}
+  </div>
+</div>

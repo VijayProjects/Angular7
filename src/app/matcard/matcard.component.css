@@ -1,0 +1,8 @@
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('E:\ClassContent\Angular7\Shopping-Cart\src\assets\ak.jpg');
+  background-size: cover;
+}

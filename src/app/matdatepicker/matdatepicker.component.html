@@ -1,0 +1,9 @@
+<div class="container">
+  <mat-form-field>
+    <input matInput [matDatepicker]="myDatePicker" placeholder="Choose a date">
+    <mat-datepicker-toggle matSuffix [for]="myDatePicker">
+      <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+    </mat-datepicker-toggle>
+    <mat-datepicker #myDatePicker [startAt]="startDate"></mat-datepicker>
+  </mat-form-field>
+</div>

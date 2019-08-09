@@ -1,0 +1,18 @@
+.mat-container {
+  display: flex;
+  flex-direction: column;
+}
+.mat-container > *{
+  width: 100%;
+}
+.mat-container form {
+  margin-bottom: 20px;
+}
+
+.mat-container form > * {
+  margin: 5px 0;
+}
+
+.mat-container .mat-radio-button {
+  margin: 0 12px;
+}
