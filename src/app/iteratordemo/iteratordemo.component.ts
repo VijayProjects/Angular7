@@ -38,7 +38,7 @@ export class IteratordemoComponent {
     ];
   }
 
-  public trackByFn(index, product) {
+  /* public trackByFn(index, product) {
     return product.productId; // or index;
-  }
+  } */
 }

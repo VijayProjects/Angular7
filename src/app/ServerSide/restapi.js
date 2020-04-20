@@ -11,8 +11,7 @@ var url = "mongodb://127.0.0.1:27017";
 server.use(bodyParser.urlencoded({ extended: true }));
  
 // parse application/json
-server.use(bodyParser.json())
- 
+server.use(bodyParser.json());
 //create REST api request for get all products
 server.get("/getProducts", (request, response) => {
   mongoClient.connect(url, (err, db) => {

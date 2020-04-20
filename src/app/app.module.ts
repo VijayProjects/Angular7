@@ -53,11 +53,26 @@ import { MatnavbarComponent } from './matnavbar/matnavbar.component';
 import { MatsidenavComponent } from './matsidenav/matsidenav.component';
 import { MatformfieldComponent } from './matformfield/matformfield.component';
 import { MatcardComponent } from './matcard/matcard.component';
-
+import { InterpolationComponent } from './interpolation/interpolation.component';
+import { PropertybindingComponent } from './propertybinding/propertybinding.component';
+import { ConditionsComponent } from './conditions/conditions.component';
+import { CarsdemoComponent } from './carsdemo/carsdemo.component';
+import { ChangeeventComponent } from './changeevent/changeevent.component';
+import { GridComponent } from './grid/grid.component';
+import { GridfilterComponent } from './gridfilter/gridfilter.component';
+import { DircustomeDirective } from './dircustome.directive';
+import { CustomdirectiveComponent } from './customdirective/customdirective.component';
+import { TitlecasePipe } from './titlecase.pipe';
+import { ConfigComponent } from './config/config.component';
+import { ConfigService } from './config.service';
+import { ScrollingModule } from '@angular/cdk/scrolling';
+import { VirtualscrollingComponent } from './virtualscrolling/virtualscrolling.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    InterpolationComponent,
+    PropertybindingComponent,
     LoginComponent,
     HomeComponent,
     RegisterComponent,
@@ -96,7 +111,17 @@ import { MatcardComponent } from './matcard/matcard.component';
     MatnavbarComponent,
     MatsidenavComponent,
     MatformfieldComponent,
-    MatcardComponent
+    MatcardComponent,
+    ConditionsComponent,
+    CarsdemoComponent,
+    ChangeeventComponent,
+    GridfilterComponent,
+    GridComponent,
+    DircustomeDirective,
+    CustomdirectiveComponent,
+    TitlecasePipe,
+    ConfigComponent,
+    VirtualscrollingComponent
   ],
   imports: [
     BrowserModule,
@@ -107,7 +132,8 @@ import { MatcardComponent } from './matcard/matcard.component';
     BrowserAnimationsModule,
     MatAutocompleteModule,
     MatInputModule,
-    MeterialModule
+    MeterialModule,
+    ScrollingModule
   ],
   providers: [
     ProductsdataService,
@@ -115,8 +141,9 @@ import { MatcardComponent } from './matcard/matcard.component';
     CoursesdataService,
     VegitabledataService,
     GetdataService,
-    PostdataService
+    PostdataService,
+    ConfigService
   ],
-  bootstrap: [MatcardComponent]
+  bootstrap: [CourseComponent]
 })
 export class AppModule { }

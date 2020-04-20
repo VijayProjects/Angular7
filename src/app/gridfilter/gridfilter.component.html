@@ -1,0 +1,15 @@
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="txtAll" name="filter" class="custom-control-input" value="All"
+    (change)="onCategoryChanged()" [(ngModel)]="selectedValue">
+  <label class="custom-control-label" for="txtAll">All[{{allCount}}]</label>
+</div>
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="txtElect" name="filter" class="custom-control-input" value="Electronics"
+    (change)="onCategoryChanged()" [(ngModel)]="selectedValue">
+  <label class="custom-control-label" for="txtElect">Electronics[{{electsCount}}]</label>
+</div>
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="txtShoe" name="filter" class="custom-control-input" value="Shoes"
+  (change)="onCategoryChanged()" [(ngModel)]="selectedValue">
+  <label class="custom-control-label" for="txtShoe">Shoes[{{shoesCount}}]</label>
+</div>

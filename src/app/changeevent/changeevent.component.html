@@ -1,0 +1,19 @@
+<div class="container">
+  <marquee class="text-primary">
+    <h2>Online Shopping cart</h2>
+  </marquee>
+  <div class="form-group">
+    <label>select a category</label>
+    <select (change)="changeCategory()" class="form-control" [(ngModel)]="lstCategory">
+      <option *ngFor="let category of catergoryList">{{category}}</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>select a product</label>
+    <select class="form-control" [(ngModel)]="lstProduct">
+      <option *ngFor="let product of productList">{{product}}</option>
+    </select>
+  </div>
+  <br>
+  
+</div>

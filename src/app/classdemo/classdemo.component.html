@@ -1,6 +1,4 @@
-<head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-</head>
+
 <!-- Model-1 Using component value -->
 <div [class.effects]="isEffects">Welcome To Angular-1</div>
 <br>
@@ -8,7 +6,7 @@
 <div [ngClass]="'effects'">Referenced As String</div>
 <br>
 <!-- Referenced as Array -->
-<div [ngClass]="['backEffects','textEffects']">Referenced As String</div>
+<div [ngClass]="['backEffects','textEffects']">Referenced As Array</div>
 <br>
 <!-- Referenced as Object -->
 <div [ngClass]="{backEffects:true,borderEffects:true,textEffects:true}">Referenced As  Object</div>

@@ -1,0 +1,18 @@
+<!-- Normal Syntax
+<div class="container">
+  <h2>Brits Performing artists</h2>
+  <div class="example-viewport">
+    <div *ngFor="let artist of artists" class="list-comparison">
+      <h5>{{artist.name}}</h5>
+    </div>
+  </div>
+</div> -->
+<div class="container">
+  <h2>Brits Performing artists</h2>
+  <cdk-virtual-scroll-viewport itemSize="100" class="example-viewport">
+    <div *cdkVirtualFor="let artist of artists" class="list">
+      <h2>{{artist.name}}</h2>
+    </div>
+  </cdk-virtual-scroll-viewport>
+</div>
+<h1 appDircustome >This is Custome directivee</h1>

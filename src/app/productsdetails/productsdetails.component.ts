@@ -9,7 +9,7 @@ import { ProductsdataService } from '../productsdata.service';
 })
 export class ProductsdetailsComponent implements OnInit {
   public products = [];
-  public prodId;
+  public prodId: string;
   constructor(private router: Router, private activeRoute: ActivatedRoute, private data: ProductsdataService) { }
 
   ngOnInit() {
